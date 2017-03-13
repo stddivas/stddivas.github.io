@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Studio Diva's Belezaria</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flipclock.js"></script>
+    <link href="css/flipclock.css" rel="stylesheet" type="text/css" />
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <meta name="google-site-verification" content="hPevrtvkf50CK3Hz0DKNn7J6a7a5li8zA151PS4-In0" />
+    <script>
+      $(function(){
+
+        var currentDate = new Date();
+				var futureDate  = new Date('03/24/2017 19:00:00');
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+        $(".clock").FlipClock(diff, {
+          image: "img/digits.png",
+          format: "dd:hh:mm:ss",
+          countdown: true,
+          clockFace: 'DailyCounter',
+          language: 'pt'
+        });
+      });
+
+      $(document).ready(function(){
+        $('.cabeca').fadeIn(2000);
+        $('.texto').fadeIn(2000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <img class="cabeca" style="display:none;" src="img/Cabeca.png" />
+      <div class="flip-counter clock flip-clock-wrapper"></div>
+      <div class="texto"  style="display:none;">
+        <p>Em breve, o espaço de beleza que você merece!</p>
+      </div>
+    </div>
+  </body>
+</html>
