@@ -1,3 +1,5 @@
+/* #f6af49 #fb5 sandybrown hsl(35,90,62) rgb(246,175,73) */
+
 body{
   margin:0;
   padding: 0;
@@ -32,6 +34,8 @@ body{
 #main img.fbLogo{
   margin: 5 auto;
   width: 50px;
+  -webkit-filter: hue-rotate(20deg);
+  filter: hue-rotate(20deg);
 }
 
 .hide{
@@ -41,7 +45,7 @@ body{
 
 .texto{
   font-size: 26px;
-  color: #fff;
+  color: #f6af49;
   text-shadow: 0 0 3px #753e1a;
 }
 
