@@ -29,11 +29,13 @@ body{
 #main img{
   margin: 20 auto;
   width: 15%;
+  min-width: 150px;
 }
 
 #main img.fbLogo{
   margin: 5 auto;
   width: 50px;
+  min-width: 50px;
   -webkit-filter: hue-rotate(20deg);
   filter: hue-rotate(20deg);
 }
