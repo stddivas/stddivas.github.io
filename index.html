@@ -7,6 +7,7 @@
     <link href="css/flipclock.css" rel="stylesheet" type="text/css" />
     <link href="css/site.css" rel="stylesheet" type="text/css" />
     <meta name="google-site-verification" content="BBZD7QpyDrHWpZUGF2qoN_VRtUja1vIuh3KyLVe3wP8" />
+    <meta charset="UTF-8">
     <script>
       $(function(){
 
@@ -25,17 +26,29 @@
 
       $(document).ready(function(){
         $('.cabeca').fadeIn(2000);
-        $('.texto').fadeIn(2000);
+        $('.textoFade').fadeIn(2000);
       });
     </script>
   </head>
   <body>
     <div id="main">
-      <img class="cabeca" style="display:none;" src="img/Cabeca.png" />
-      <div class="flip-counter clock flip-clock-wrapper"></div>
-      <div class="texto"  style="display:none;">
-        <p>Em breve, o espaço de beleza que você merece!</p>
+      <img class="cabeca" style="display:none;" src="img/Logo.png" />
+      <div class="texto">
+        <p>O espaço de beleza que você merece chegou, venha nos visitar!</p>
       </div>
+      <div style="padding:10px">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.837665965329!2d-51.30636728436686!3d-30.29868268179047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951988ff6fd84ddb%3A0x15ac7a9e9a2f7664!2sAv.+Visc.+do+Rio+Grande%2C+1370+-+Centro%2C+Barra+do+Ribeiro+-+RS%2C+96790-000!5e0!3m2!1sen!2sbr!4v1491395042146"  frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="texto">
+        <p>
+          <a href="http://www.facebook.com/stddivas" target="_blank" title="StdDivas">
+          <img class="fbLogo" src="img/facebooklogo.png" />
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   </body>
 </html>
